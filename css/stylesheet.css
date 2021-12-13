@@ -1,0 +1,63 @@
+header{
+    background-color:blue;
+    height:60px;
+    width:100%;
+}
+
+.header-container{
+    font-size:40px;
+    color:burlywood;
+}
+
+.header-logo{
+    float:left;
+    color:darkblue;
+    font-size:80px;
+    width:120px;
+    margin-top:10px;
+}
+
+.header-list{
+    font-size:20px;
+    float:center;
+}
+.header-login{
+
+    background-color:darkmagenta;
+    transition: all 0.5s;
+    float:right;
+}
+
+.contents{
+    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+    font-size:40px;
+}
+.contents-container{
+    background-color: darkgray;
+}
+.contents-item{
+    font-size:20px;
+}
+
+footer{
+    background-color:red;
+}
+
+.footer-container{
+    font-size:40px;
+}
+.footer-list{
+
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: sans-serif;
+}
