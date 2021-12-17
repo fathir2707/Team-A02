@@ -1,0 +1,35 @@
+
+/* Untuk ukuran Table (1000px) */
+@media ( max-width: 1000px){
+    .header-left h1{
+        margin-left: 35px;
+    }
+
+    .main-wrapper h1{
+        font-size: 32px;
+    }
+}
+
+/* Untuk ukuran Smartphone (670px) */
+
+@media (max-width: 670px){
+    
+    .header-left h1{
+        font-size: 25px;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+
+    .header-right{
+        display:none;
+    }
+
+    .menu-icon{
+        display: inline-block;
+    }
+
+    .main-wrapper h1{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

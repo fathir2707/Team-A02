@@ -1,46 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin : 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 header{
-    background-color:blue;
-    height:60px;
+    background-color: rgba(34, 49, 52, 0.9);
+    height:65px;
     width:100%;
+    position: fixed;
+    top: 0;
+    z-index: 10px;
 }
 
-.header-container{
-    font-size:40px;
-    color:burlywood;
+.header-left{
+    float: left;
+    margin-top: -15px;
+    margin-left: -35px;
 }
 
-.header-logo{
-    float:left;
-    color:darkblue;
-    font-size:80px;
-    width:120px;
-    margin-top:10px;
+.header-left h1{
+    font-size: 35px;
+    color: white;
 }
 
-.header-list{
-    font-size:20px;
-    float:center;
-}
-.header-login{
-
-    background-color:darkmagenta;
-    transition: all 0.5s;
+.menu-icon{
+    display: none;
+    color:white;
     float:right;
+    font-size: 25px;
+    padding: 21px 0;
 }
 
-.contents{
-    background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-    font-size:40px;
+.header-right{
+    float: right;
+    margin-right: -50px;
 }
-.contents-container{
-    background-color: darkgray;
+
+.header-right ul{
+    list-style: none;
 }
+
+.header-right li{
+    float: left;
+    margin-top: -20px;
+}
+
+.header-right a{
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    transition: all 0.5s;
+}
+
+.header-right a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-wrapper{
+    padding: 180px 0 100px 0;
+    background-color: #81ecec;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-wrapper h1{
+    font-size: 80px;
+}
+
+
 .contents-item{
     font-size:20px;
 }
 
+.body-wrapper{
+    background-color: #dfe6e9;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
 footer{
-    background-color:red;
+    background-color: #2d3436;
+    height: 65px;
+    width:100%;
+
 }
 
 .footer-container{
@@ -50,14 +108,3 @@ footer{
 
 }
 
-h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-p{
-    font-family: sans-serif;
-}
