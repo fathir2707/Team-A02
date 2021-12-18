@@ -1,35 +1,54 @@
 
 /* Untuk ukuran Table (1000px) */
-@media ( max-width: 1000px){
-    .header-left h1{
-        margin-left: 35px;
-    }
-
-    .main-wrapper h1{
-        font-size: 32px;
-    }
-}
-
-/* Untuk ukuran Smartphone (670px) */
-
-@media (max-width: 670px){
-    
-    .header-left h1{
-        font-size: 25px;
-        margin-top: 30px;
-        margin-left: 25px;
+@media (max-width: 1000px){
+    .header-left{
+        margin-left: 10px;
     }
 
     .header-right{
-        display:none;
+        margin-right: 10px;
     }
 
-    .menu-icon{
-        display: inline-block;
+    .header-right a{
+        border-radius: 30px;
+    }
+    
+    .main-wrapper h1{
+        font-size: 32px;
+    }
+
+    .flex-list {
+        flex-wrap: wrap;
+    }
+
+    .flex-list li{
+        width: 50%;
+    }
+
+    
+}
+
+/* Untuk ukuran Smartphone (570px) */
+
+@media (max-width: 570px){
+    .header-left{
+        margin-left: 15px;
+    }
+
+    .header-right a{
+        border-radius: 50px;
     }
 
     .main-wrapper h1{
         font-size: 24px;
         line-height: 36px;
+    }
+
+    .flex-list{
+        flex-direction:column;
+    }
+      
+    .flex-list li{
+        margin: 0 auto;
     }
 }
