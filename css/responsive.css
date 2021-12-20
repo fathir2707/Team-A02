@@ -1,6 +1,7 @@
 
 /* Untuk ukuran Table (1000px) */
 @media (max-width: 1000px){
+    
     .header-left{
         margin-left: 10px;
     }
@@ -17,22 +18,74 @@
         font-size: 32px;
     }
 
-    .flex-list {
-        flex-wrap: wrap;
+    .body-wrapper{
+        width: 100%;
+        height: 1100px;
+        flex: wrap;
     }
 
-    .flex-list li{
+    .list-item{
+        margin: 50px;
+
+    }
+
+    .list {
+        flex-wrap: wrap-reverse;
+    }
+
+    .list li{
         width: 50%;
+    }
+
+    footer{
+        width: 100%;
+        height: 700px;
+
     }
 
     
 }
 
-/* Untuk ukuran Smartphone (570px) */
+/* Untuk ukuran Smartphone (670px) */
 
-@media (max-width: 570px){
+@media (max-width: 670px){
+    .btn{
+        width: 100%;
+    }
+
+    .facebook {
+        margin-bottom: 10px;
+    }
+
+    .main-wrapper{
+        text-align: left;
+    }
+
+    .main-wrapper h1{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .main-wrapper h2{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main-wrapper p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .body-wrapper{
+        height: 1600px;
+    }
+
     .header-left{
         margin-left: 15px;
+    }
+    
+    .header-right{
+        margin-right: -30px;
     }
 
     .header-right a{
@@ -44,11 +97,15 @@
         line-height: 36px;
     }
 
-    .flex-list{
-        flex-direction:column;
+    .footer-left {
+        flex-direction: column;
     }
-      
-    .flex-list li{
+
+    .footer-left li{
         margin: 0 auto;
+    }
+
+    .footer-right img{
+        display: none;
     }
 }

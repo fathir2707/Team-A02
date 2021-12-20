@@ -10,23 +10,22 @@ body {
 
 a{
     text-decoration: none;
-    color:white;
 }
 
 .container{
     max-width: 1170px;
     width: 100%;
-    padding: 0 auto;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 header{
     background-color: rgba(34, 49, 52, 0.9);
-    width:100%;
-    height:65px;
+    width: 100%;
+    height: 65px;
     position: fixed;
     top: 0;
-    z-index: 10px;
+    z-index: 10;
     overflow: hidden;
 }
 
@@ -35,7 +34,9 @@ header{
 }
 
 .logo {
-    width:124px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
     margin-top: 5px;
 }
 
@@ -63,82 +64,251 @@ header{
     color:black;
 }
 
+.header-right a.on:hover{
+    background-color: rgba(34, 49, 52, 0.9);
+    color: white;
+}
+
 .main-wrapper{
     padding: 180px 0 100px 0;
-    background-color: #81ecec;
-    height: 500px;
-    width: 100%;
+    /* background-color: #81ecec; */
+    background-image: url(https://www.desktopbackground.org/p/2010/04/13/1158_cloud-wallpaper-hd-background-5-png-ioncube-blog_1920x1080_h.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
+    z-index: 0;
+}
+
+.main-wrapper h1{
+    opacity: 0.5;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.main-wrapper h2{
+    opacity: 0.5;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.main-wrapper p{
+    opacity: 0.5;
+
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    z-index: auto;
+}
+  
+.btn-wrapper p {
+    margin: 10px 0;
+}
+  
+.signup {
+    background-color: #d37c09;
+}
+  
+.facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+}
+  
+.twitter {
+    background-color: #55acee;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+  
+.btn:hover {
+    opacity: 1;
+ }
+  
+.fa {
+    margin-right: 5px;
 }
 
 ul {
     list-style: none;
     margin: 0px;
     padding: 60px 0px;
-    text-align: center;
+    font-weight: 500;
 }
 
 li {
-    color: white;
-    height: 80px;
-    line-height: 80px;
+    line-height: 30px;
+    margin: 5px;
+    font-weight: 100;
 }
 
-.contents-item{
-    font-size:20px;
-}
 
-.flex-list{
+.body-wrapper{
+    background-color: #dfe6e9;
+    height: 500px;
+    width: 100%;
+    text-align: center;
     display: flex;
 }
 
-.flex-list li{
-    flex: auto;
-    border-radius: 17px;
+.body-items {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.item-isi {
+    width: 250px;
+    height: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+.item-isi:hover{
+    box-shadow:  7px 7px 0 rgba(34, 49, 52, 0.9);
+    bottom: 7px;
     cursor: pointer;
 }
 
+.list-item {
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
-.contents-item-1{
+.list-item h4{
+    top: 90px;
+    width: 100%;
+}
+
+.list-item img{
+    z-index: 1;
+}
+
+.txt-content{
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+}
+
+.message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    cursor: pointer;
+    box-shadow: 0 7px #1a7940;
+    border-radius: 3px;
+}
+
+.message:active{
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+footer{
+    height: 500px;
+    width: 100%;
+    bottom: 0;
+    z-index: 1px;
+    
+}
+
+.footer-main{
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.footer-main h3{
+    font-size: 25px;
+}
+
+.footer-main p {
+    font-size: 15px;
+}
+
+.footer-body {
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+}
+
+.footer-left {
+    float: left;
+    text-align: left;
+}
+
+.footer-right img{
+    float: right;
+    display: block;
+    border-radius: 100px;
+}   
+
+.footer-bottom{
+    justify-content: center !important;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 80px;
+    padding-top: 120px;
+}
+
+.footer-bottom p{
+    text-align: center;
+    font-weight: 700;
+}
+
+.list {
+    display: flex;
+    text-align: center;
+    border-top: 1px solid #dfe6e9;
+    width: 100%;
+    justify-content: center;
+}
+
+.list li{
+    flex: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.list li:hover {
+    opacity: 0.7;
+}
+
+.item-1{
     color: white;
     background-color: #3b5998;
 }
 
-.contents-item-2{
+.item-2{
     color:white;
     background-color: #1da1f2;
 }
 
-.contents-item-3{
+.item-3{
     color:white;
-    background-color: #0d1117;
+    background-color: #0088cc;
 }
 
-.contents-item-4{
+.item-4{
     color:white;
     background: linear-gradient(140deg, #c32aa3 0%, #4c5fd7 35%, #7232bd 50%, #f46f30 75%, #ffdc7d 90%);
     
 }
-
-.body-wrapper{
-    background-color: #dfe6e9;
-    height: 200px;
-    width: 100%;
-    text-align: center;
-}
-
-footer{
-    background-color: #2d3436;
-    height: 65px;
-    width:100%;
-
-}
-
-.footer-container{
-    font-size:40px;
-}
-
-.footer-list{
-    display:none;
-}
-
