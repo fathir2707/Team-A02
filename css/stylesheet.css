@@ -17,6 +17,7 @@ a{
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
+    position: relative;
 }
 
 header{
@@ -69,9 +70,10 @@ header{
     color: white;
 }
 
+
 .main-wrapper{
     padding: 180px 0 100px 0;
-    /* background-color: #81ecec; */
+    
     background-image: url(https://www.desktopbackground.org/p/2010/04/13/1158_cloud-wallpaper-hd-background-5-png-ioncube-blog_1920x1080_h.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +82,7 @@ header{
     z-index: 0;
 }
 
-.main-wrapper h1{
+ .main-wrapper h1{
     opacity: 0.5;
     font-size: 45px;
     letter-spacing: 5px;
@@ -97,7 +99,8 @@ header{
 .main-wrapper p{
     opacity: 0.5;
 
-}
+} 
+
 
 .btn-wrapper {
     text-align: center;
@@ -175,11 +178,10 @@ li {
     height: 250px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 3px;
 }
 
 .item-isi:hover{
-    box-shadow:  7px 7px 0 rgba(34, 49, 52, 0.9);
+    box-shadow:  7px 7px 7px  rgba(34, 49, 52, 0.9);
     bottom: 7px;
     cursor: pointer;
 }
@@ -195,10 +197,6 @@ li {
     width: 100%;
 }
 
-.list-item img{
-    z-index: 1;
-}
-
 .txt-content{
     text-align: center;
     display: inline-block;
@@ -209,16 +207,18 @@ li {
 
 .message {
     padding: 15px 40px;
-    background-color: #5dca88;
+    background-color: #8fa5f4;
     cursor: pointer;
     box-shadow: 0 7px #1a7940;
     border-radius: 3px;
+    color: white;
 }
 
 .message:active{
     position: relative;
     top: 7px;
     box-shadow: none;
+    color: black;
 }
 
 footer{
@@ -255,8 +255,13 @@ footer{
 .footer-right img{
     float: right;
     display: block;
-    border-radius: 100px;
-}   
+    border-radius: 70px;
+    margin-top: 20px;
+}  
+
+.footer-right img.anime{
+    animation: ani 3s linear infinite;
+}
 
 .footer-bottom{
     justify-content: center !important;
